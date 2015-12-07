@@ -1,9 +1,7 @@
 <h2>Todos Template</h2>
 
-<ul>
+<ul id="chat-history">
     {{#each model as |message|}}
-        <li>
-            {{message.speaker}} [{{message.timestamp}}]> {{message.message}}
-        </li>
+        {{chat-message message=message}}
     {{/each}}
 </ul>
