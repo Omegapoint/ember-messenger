@@ -53,35 +53,58 @@ Specify what it takes to deploy your app.
 
 
 ## Oklara notes
-node -v (version 4.0.x)
-npm -v
-npm install -g ember-cli
-npm install -g bower
-brew install watchman
-npm install -g phantomjs
-ember new ember-messenger
-ember server
---> http://localhost:4200
-ember test
---> http://localhost:4200/tests
+### Installera...
+* `node -v` (min version 4.0.x ???)
+* `npm -v`(min version 4.0.x ????)
+* `npm install -g ember-cli`
+* `npm install -g bower`
+* `brew install watchman` (auto-complie)
+* `npm install -g phantomjs` (tests)
 
+### Generera appen
+* `ember new ember-messenger`
+* `ember server`[localhost:4200](http://localhost:4200)
+* `ember test` [localhost:4200/tests](http://localhost:4200/tests)
 
-Cloning an existing project
-git clone git@github.com:me/my-app.git
-cd my-app
-
-bower.json
+### Ändra ember-version
+* `npm install`
+* ``ember-messenger/bower.json:
+...
 "ember": "2.0",
 "ember-data": "2.0",
-bower install
-välj minst 2.0 om bower undrar
-npm install
-ember server
+...``
+* `bower install` (välj minst 2.0 om bower undrar)
 
-ändra rubrik i application.hbs (ta upp handlebars)
-installera ember inspector (addon, finns till chrome och firefox)
+### Testa att ändra i appen
+* ändra rubrik i application.hbs (ta upp handlebars)
+* installera ember inspector (addon, finns till chrome och firefox)
+
+### Generera routes (app/routes/xyz.js <--> app/templates/xyz.hbs)
+* `ember generate route messages/index`
+* `ember generate route messages/ember`
+* `ember generate route messages/test`
+
+### Generera component (... <--> ...)
+* `ember generate component chat-message`
+
+* fixa integarion test i `tests/compintents/chat-message`
+
+* `ember g component chat-history` (g short för generate)
+
+* `ember generate model ...`
+
+* `ember install ember-cli-mirage`
 
 
+## TODO:
+* (mocka data om vi vill)
+* Skapa nytt chatmeddelande
+* Rumsfilter
+* CSS-fix
+
+## IDÈER:
+* Test (fixa failande tester)
+* Nya funktioner
 
 -------------
 appnamamn; todo-mvc --> ember-messenger
