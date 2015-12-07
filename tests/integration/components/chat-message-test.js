@@ -16,9 +16,7 @@ test('it renders', function(assert) {
 
   // Template block usage:" + EOL +
   this.render(hbs`
-    {{#chat-message}}
-      template block text
-    {{/chat-message}}
+    {{chat-message message=message}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');
