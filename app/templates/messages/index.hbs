@@ -1,0 +1,9 @@
+<h2>Todos Template</h2>
+
+<ul>
+    {{#each model as |message|}}
+        <li>
+            {{message.speaker}} [{{message.timestamp}}]> {{message.message}}
+        </li>
+    {{/each}}
+</ul>
