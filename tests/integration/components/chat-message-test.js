@@ -22,5 +22,5 @@ test('it renders', function(assert) {
     {{chat-message message=message}}
   `);
 
-  assert.equal(this.$().text().trim(), 'user [tid]> hej');
+  assert.equal(this.$().text().trim(), '[tid] <user> hej');
 });

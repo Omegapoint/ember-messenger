@@ -1,22 +1,21 @@
 <h2 id="title">Welcome to The Messenger</h2>
 <section id="messengerapp">
     <header id="header">
-        <h1>messages</h1>
-    </header>
-
-    {{outlet}}
-</section>
-
-<footer id="footer">
-    <ul id="chat-rooms">
-        <li>
+      <nav>
+        <ul id="chat-rooms">
+          <li>
             <a href="/" class="selected">All</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="ember">Ember</a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a href="test">Test</a>
-        </li>
-    </ul>
-</footer>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="content">
+      {{outlet}}
+    </section>
+</section>
