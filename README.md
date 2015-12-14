@@ -76,19 +76,3 @@ Specify what it takes to deploy your app.
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://www.ember-cli.com/)
-
-## To be removed...
-### TODO:
-  * (mocka data om vi vill)
-  * Skapa nytt chatmeddelande
-  * Rumsfilter
-  * CSS-fix
-
-### IDÈER:
-  * Test (fixa failande tester)
-  * Nya funktioner
-
-### Notes
-appnamamn; todo-mvc --> ember-messenger
-
-routes: todos --> messenger
