@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
   * `npm install -g bower`
 * [Ember CLI](http://www.ember-cli.com/)*
   * `npm install -g ember-cli`
-* [PhantomJS](http://phantomjs.org/)* (tests)
+* [PhantomJS](http://phantomjs.org/)* (integration tests)
   * `npm install -g phantomjs`
 * [Watchman](https://facebook.github.io/watchman/) (version 3.x, auto-complie)
   * `brew install watchman`
