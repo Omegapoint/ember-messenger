@@ -34,7 +34,8 @@ You will need the following things properly installed on your computer.
 ...
 "ember": "2.0",
 "ember-data": "2.0",
-...```
+...
+```
 * `bower install` (choose at least 2.0 if bower asks)
 
 ## Running / Development
