@@ -4,13 +4,13 @@
       <nav>
         <ul id="chat-rooms">
           <li>
-            <a href="/" class="selected">All</a>
+            {{#link-to "messages.index" activeClass="selected"}}All{{/link-to}}
           </li>
           <li>
-            <a href="ember">Ember</a>
+            {{#link-to "messages.ember" activeClass="selected"}}Ember{{/link-to}}
           </li>
           <li>
-            <a href="test">Test</a>
+            {{#link-to "messages.test" activeClass="selected"}}Test{{/link-to}}
           </li>
         </ul>
       </nav>
