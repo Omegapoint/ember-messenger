@@ -13,9 +13,6 @@ nav ul li {
     list-style: none;
     float: left;
     text-align: center;
-    border-left: 0.1em solid #AEA79F;
-    border-bottom: 0.1em solid #AEA79F;
-    box-sizing: border-box;
     width: 33.3333%; /* fallback for non-calc() browsers */
     width: calc(100% / 3);
 
@@ -23,11 +20,14 @@ nav ul li {
 }
 
 nav ul li a {
-    padding: 0 10px;
-    text-decoration: none;
-    display: block;
-    color: #818181;
+  background: #393939;
+  color: #818181;
+  padding: 0 10px;
+  text-decoration: none;
+  display: block;
+
 }
 nav ul li a.selected {
+  background: #141414;
   color: #45D40C;
 }
