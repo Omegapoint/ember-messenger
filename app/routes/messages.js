@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+var localAuthor = 'jk7';
 export default Ember.Route.extend({
     model() {
         return this.store.findAll('message');
@@ -11,8 +12,11 @@ export default Ember.Route.extend({
                message: newMessage,
                timestamp: new Date().toLocaleString(),
                room: 'test',
-               speaker: 'Anna'
+               speaker: localAuthor
            }).save();
+        },
+        updateAuthor(author){
+          localAuthor = author;
         }
     }
 });

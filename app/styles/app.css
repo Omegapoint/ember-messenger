@@ -17,11 +17,15 @@ body {
 }
 input{
   font-family: courier, monospace;
-  width : 90%;
+  width: 90%;
   border: none;
   background: #141414;
   color: #45D40C;
   font-size:1em;
+}
+.message-input{
+  width : 100%;
+
 }
 .blink_me {
   animation: blinker 1s linear infinite;
