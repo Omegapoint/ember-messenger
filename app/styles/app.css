@@ -30,9 +30,3 @@ input{
 @keyframes blinker {
   50% { opacity: 0.0; }
 }
-#c {
-  color: #0bc;
-}
-#b {
-  color: #ff0096;
-}
