@@ -1,0 +1,33 @@
+nav{
+  width: 100%;
+  background: #141414;
+}
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    border-left: 0.1em solid #AEA79F;
+    border-bottom: 0.1em solid #AEA79F;
+    box-sizing: border-box;
+    width: 33.3333%; /* fallback for non-calc() browsers */
+    width: calc(100% / 3);
+
+    flex-grow: 1;
+}
+
+nav ul li a {
+    padding: 0 10px;
+    text-decoration: none;
+    display: block;
+    color: #818181;
+}
+nav ul li a.selected {
+  color: #45D40C;
+}

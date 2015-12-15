@@ -9,7 +9,7 @@ export default Ember.Route.extend({
         createMessage(newMessage) {
            this.store.createRecord('message', {
                message: newMessage,
-               timestamp: '2015-12-14 21:00',
+               timestamp: new Date().toLocaleString(),
                room: 'test',
                speaker: 'Anna'
            }).save();

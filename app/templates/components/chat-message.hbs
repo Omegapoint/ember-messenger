@@ -1,3 +1,10 @@
 <label class="{{message.room}}">
-  [{{message.timestamp}}] &#60;{{message.speaker}}&#62; {{message.message}}
+  <span class="msg-timestamp">[{{message.timestamp}}]</span>
+  <span class="msg-who">
+      {{message.speaker}}@{{message.room}}$
+  </span>
+  <span class="msg-content">
+    {{message.message}}
+  </span>
+
 </label>

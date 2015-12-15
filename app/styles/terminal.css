@@ -1,0 +1,54 @@
+.shell-wrap {
+  width: 80em;
+  margin: 100px auto 0 auto;
+  box-shadow: 0 0 5em rgba(0,0,0,0.4);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  font-family: courier, monospace;
+}
+
+.shell-top-bar {
+  color: #D5D5D5;
+  padding: 5px 0;
+  margin: 0;
+  font-size: 1em;
+
+  border-bottom: none;
+
+  -webkit-border-top-left-radius: 0.3em;
+  -webkit-border-top-right-radius: 0.3em;
+  -moz-border-radius-topleft: 0.3em;
+  -moz-border-radius-topright: 0.3em;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+
+  background: #333333;
+}
+
+.shell-body {
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  background: #141414;
+  color: #45D40C;
+  font: 0.8em;
+  line-height: 1.6em;
+  height: 40em;
+  overflow: scroll;
+
+  -webkit-border-bottom-right-radius: 0.3em;
+  -webkit-border-bottom-left-radius: 0.3em;
+  -moz-border-radius-bottomright: 0.3em;
+  -moz-border-radius-bottomleft: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+}
+
+.shell-body li {
+  word-wrap: break-word;
+  position: relative;
+}
+.msg-timestamp{
+  color: #AEA79F;
+}

@@ -4,7 +4,7 @@ import Mirage, {faker} from 'ember-cli-mirage';
 export default Mirage.Factory.extend({
   message: "Learn Ember",
   speaker: "Pia",
-  timestamp: "2015-12-07 14:14",
+  timestamp: "2015-12-07 14:14:13",
   room: "ember"
 });
 
