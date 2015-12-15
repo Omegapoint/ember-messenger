@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
-var localAuthor = 'jk7';
+var inRoom = 'test';
+var localAuthor = 'anonymous';
 export default Ember.Route.extend({
     model() {
         return this.store.findAll('message');
@@ -11,7 +12,7 @@ export default Ember.Route.extend({
            this.store.createRecord('message', {
                message: newMessage,
                timestamp: new Date().toLocaleString(),
-               room: 'test',
+               room: inRoom,
                speaker: localAuthor
            }).save();
         },

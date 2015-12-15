@@ -12,21 +12,21 @@ body {
   background-color: #AEA79F;
   margin-left:auto;
   margin-right:auto;
-  margin-top:100px;
   font-size:1em;
 }
 input{
   font-family: courier, monospace;
-  width: 90%;
   border: none;
+  width:90%;
   background: #141414;
   color: #45D40C;
   font-size:1em;
+  -webkit-box-sizing : border-box;‌​
+  -moz-box-sizing : border-box;
+  box-sizing : border-box;
+  outline:none;
 }
-.message-input{
-  width : 100%;
 
-}
 .blink_me {
   animation: blinker 1s linear infinite;
 }
