@@ -1,6 +1,7 @@
 /*jshint node:true*/
 module.exports = function(app) {
   var express = require('express');
+  var bodyParser = require('body-parser');
   var messagesRouter = express.Router();
 
   var messages = [{
@@ -47,7 +48,10 @@ module.exports = function(app) {
   });
 
   messagesRouter.post('/', function(req, res) {
-    res.status(201).end();
+    var message = req.body.message;
+    message.id = Math.random();
+    messages.push(message);
+    res.status(201).send({'messages': message});
   });
 
   messagesRouter.get('/:id', function(req, res) {
@@ -56,18 +60,6 @@ module.exports = function(app) {
         id: req.params.id
       }
     });
-  });
-
-  messagesRouter.put('/:id', function(req, res) {
-    res.send({
-      'messages': {
-        id: req.params.id
-      }
-    });
-  });
-
-  messagesRouter.delete('/:id', function(req, res) {
-    res.status(204).end();
   });
 
   // The POST and PUT call will not contain a request body
@@ -79,6 +71,5 @@ module.exports = function(app) {
   // After installing, you need to `use` the body-parser for
   // this mock uncommenting the following line:
   //
-  //app.use('/api/messages', require('body-parser'));
   app.use('/api/messages', messagesRouter);
 };

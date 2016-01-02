@@ -18,6 +18,12 @@ module.exports = function(app) {
   var morgan  = require('morgan');
   app.use(morgan('dev'));
 
+  var bodyParser = require('body-parser')
+  app.use( bodyParser.json() );       // to support JSON-encoded bodies
+  app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    extended: true
+  }));
+
   mocks.forEach(function(route) { route(app); });
   proxies.forEach(function(route) { route(app); });
 
