@@ -8,35 +8,35 @@ module.exports = function(app) {
     id: 1,
     message: "Hej Ember",
     speaker: "Pia",
-    timestamp: "2015-12-07 14:14:13",
+    timestamp: new Date(),
     room: "ember"
   },
   {
     id: 2,
     message: "Hej! Kul att ses!",
     speaker: "Ember",
-    timestamp: "2015-12-07 14:15:13",
+    timestamp: new Date(),
     room: "ember"
   },
   {
     id: 3,
     message: "Jag vill lära mig mer om frontend-testning",
     speaker: "Anna",
-    timestamp: "2015-12-07 14:14:13",
+    timestamp: new Date(),
     room: "test"
   },
   {
     id: 4,
     message: "Var börjar jag?",
     speaker: "Anna",
-    timestamp: "2015-12-07 14:14:13",
+    timestamp: new Date(),
     room: "test"
   },
   {
     id: 5,
     message: "http://ember-cli.com/user-guide/#testing",
     speaker: "Ember",
-    timestamp: "2015-12-07 14:14:13",
+    timestamp: new Date(),
     room: "test"
   }
   ]

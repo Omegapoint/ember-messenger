@@ -11,7 +11,7 @@ export default Ember.Route.extend({
         createMessage(newMessage) {
            this.store.createRecord('message', {
                message: newMessage,
-               timestamp: new Date().toLocaleString(),
+               timestamp: new Date(),
                room: inRoom,
                speaker: localAuthor
            }).save();

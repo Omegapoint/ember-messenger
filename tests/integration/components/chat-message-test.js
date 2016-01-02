@@ -10,9 +10,10 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });" + EOL + EOL +
 
+  let time = new Date();
   var message_obj = {
     message: "hej",
-    timestamp: "tid",
+    timestamp: time,
     speaker: "user",
     room: "room",
   };
@@ -22,7 +23,7 @@ test('it renders', function(assert) {
     {{chat-message message=message}}
   `);
 
-  assert.equal(this.$(".msg-timestamp").text().trim(), '[tid]');
+  assert.equal(this.$(".msg-timestamp").text().trim(), '[' + time + ']');
   assert.equal(this.$(".msg-who").text().trim(), 'user@room$');
   assert.equal(this.$(".msg-content").text().trim(), "hej");
 });
