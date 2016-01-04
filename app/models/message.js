@@ -5,8 +5,4 @@ export default DS.Model.extend({
   timestamp: DS.attr('date'),
   room: DS.attr('string'),
   speaker: DS.attr('string'),
-
-  displayTime: function () {
-    return this.get('timestamp').toLocaleTimeString();
-  }.property('timestamp'),
 });
