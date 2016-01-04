@@ -11,19 +11,19 @@ test('it renders', function(assert) {
   // Handle any actions with this.on('myAction', function(val) { ... });" + EOL + EOL +
 
   let time = new Date();
-  var message_obj = {
+  let message = {
     message: "hej",
-    timestamp: time,
+    displayTime: time.toLocaleTimeString(),
     speaker: "user",
     room: "room",
   };
-  this.set('message', message_obj);
+  this.set('message', message);
 
   this.render(hbs`
     {{chat-message message=message}}
   `);
 
-  assert.equal(this.$(".msg-timestamp").text().trim(), '[' + time + ']');
+  assert.equal(this.$(".msg-timestamp").text().trim(), '[' + time.toLocaleTimeString() + ']');
   assert.equal(this.$(".msg-who").text().trim(), 'user@room$');
   assert.equal(this.$(".msg-content").text().trim(), "hej");
 });
