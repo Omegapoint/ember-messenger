@@ -13,7 +13,7 @@ test('it renders', function(assert) {
   let time = new Date();
   let message = {
     message: "hej",
-    displayTime: time.toLocaleTimeString(),
+    timestamp: time,
     speaker: "user",
     room: "room",
   };
