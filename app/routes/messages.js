@@ -18,13 +18,16 @@ export default Ember.Route.extend({
         },
         updateAuthor(author){
           localAuthor = author;
-        },
-        nowhere(){
-          inRoom = 'nowhere';
+          if (localAuthor === '') {
+            localAuthor = 'anonymous';
+          }
         },
         changedRoom(){
           var path = this.controllerFor('application').get('currentPath');
           inRoom = path.substring(9); //to remove 'message.'
+          if(inRoom === 'index'){
+            inRoom = 'nowhere';
+          }
         }
     }
 });
