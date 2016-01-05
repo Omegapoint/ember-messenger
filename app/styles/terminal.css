@@ -1,15 +1,36 @@
 .shell-wrap {
-  width: 100%;
-  max-width: 1000px;
-  margin: 3em auto 0 auto;
-  box-shadow: 0 0 5em rgba(0,0,0,0.4);
+  font-family: courier, monospace;
+  width: 70em;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2em auto 0 auto;
+
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
-  font-family: courier, monospace;
+
+  box-shadow: 0 0 5em rgba(0,0,0,0.4);
+}
+
+.shell{
+  background: #141414;
+  color: #45D40C;
+  margin: 0;
+
+  font: 0.8em;
+  list-style: none;
+  line-height: 1.6em;
+
+  -webkit-border-bottom-right-radius: 0.3em;
+  -webkit-border-bottom-left-radius: 0.3em;
+  -moz-border-radius-bottomright: 0.3em;
+  -moz-border-radius-bottomleft: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
 }
 
 .shell-top-bar {
+  background: #333333;
   color: #D5D5D5;
   padding: 5px 0;
   margin: 0;
@@ -23,34 +44,20 @@
   -moz-border-radius-topright: 0.3em;
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
-
-  background: #333333;
 }
 
 .shell-body {
-  margin: 0;
-  padding: 5px;
-  list-style: none;
-  height: 100%;
-  max-height: 750px;
-  background: #141414;
-  color: #45D40C;
-  font: 0.8em;
-  line-height: 1.6em;
-
+  height: 32em;
+  padding: 0.1em;
   overflow: scroll;
-
-  -webkit-border-bottom-right-radius: 0.3em;
-  -webkit-border-bottom-left-radius: 0.3em;
-  -moz-border-radius-bottomright: 0.3em;
-  -moz-border-radius-bottomleft: 0.3em;
-  border-bottom-right-radius: 0.3em;
-  border-bottom-left-radius: 0.3em;
 }
 
 .shell-body li {
   word-wrap: break-word;
   position: relative;
+}
+.terminal-input{
+  padding: 0.1em;
 }
 .msg-timestamp{
   color: #AEA79F;

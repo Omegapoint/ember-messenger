@@ -1,27 +1,6 @@
 <section id="messengerapp" class="shell-wrap">
-  <p class="shell-top-bar">/home/omegapoint/duchess/welcome_to_the_messenger</p>
-    <header id="header">
-      <nav>
-        <ul id="chat-rooms">
-          <li>
-            {{#link-to "messages.index" activeClass="selected"}}
-              All
-            {{/link-to}}
-          </li>
-          <li>
-            {{#link-to "messages.ember" activeClass="selected"}}
-              Ember
-            {{/link-to}}
-          </li>
-          <li>
-            {{#link-to "messages.test" activeClass="selected"}}
-              Test
-            {{/link-to}}
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section id="content" class="shell-body">
+  <p class="shell-top-bar">/home/omegapoint/duchess/ember_messenger</p>
+    <section id="content" class="shell">
       {{outlet}}
     </section>
 </section>

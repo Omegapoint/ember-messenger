@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 var localAuthor = 'anonymous';
+var inRoom = 'nowhere';
 
 export default Ember.Route.extend({
     model() {
@@ -11,12 +12,19 @@ export default Ember.Route.extend({
            this.store.createRecord('message', {
                message: newMessage,
                timestamp: new Date(),
-               room: this.controllerFor("application").get("currentPath").substring(9),
+               room: inRoom,
                speaker: localAuthor
            }).save();
         },
         updateAuthor(author){
           localAuthor = author;
+        },
+        nowhere(){
+          inRoom = 'nowhere';
+        },
+        changedRoom(){
+          var path = this.controllerFor('application').get('currentPath');
+          inRoom = path.substring(9); //to remove 'message.'
         }
     }
 });

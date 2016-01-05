@@ -1,5 +1,26 @@
-{{author-input action="updateAuthor"}}
-{{#chat-history messages=model}}
-    {{outlet}}
-{{/chat-history}}
-{{message-input action="createMessage"}}
+<nav id="chat-rooms">
+  <ul>
+    <li>
+      <span {{action "nowhere"}}>
+        {{#link-to "messages.index" activeClass="selected"}}ALL{{/link-to}}
+      </span>
+    </li>
+    <li>
+      <span {{action "changedRoom"}}>
+        {{#link-to "messages.ember" activeClass="selected"}}EMBER{{/link-to}}
+      </span>
+    </li>
+    <li>
+      <span {{action "changedRoom"}}>
+        {{#link-to "messages.test" activeClass="selected"}}TEST{{/link-to}}
+      </span>
+    </li>
+  </ul>
+</nav>
+{{author-input id="author" action="updateAuthor" class="terminal-input"}}
+<section class="shell-body">
+  {{#chat-history messages=model}}
+      {{outlet}}
+  {{/chat-history}}
+</section>
+{{message-input action="createMessage" class="terminal-input"}}
