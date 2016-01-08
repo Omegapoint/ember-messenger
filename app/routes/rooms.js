@@ -10,6 +10,12 @@ let testRoom = {
   name: "test"
 };
 
+let duchessRoom = {
+  id: 3,
+  name: "duchess"
+};
+
+
 export default Ember.Route.extend({
   model: function () {
     return [ emberRoom, testRoom ];
