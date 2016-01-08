@@ -10,7 +10,10 @@ Router.map(function() {
     this.route('ember');
     this.route('test');
   });
-  this.route('rooms');
+  this.resource('rooms', function () {
+    this.resource('room', { path: '/:room_id' });
+  });
 });
+
 
 export default Router;

@@ -8,7 +8,7 @@
     {{#each model as |room|}}
     <li>
       <span {{action "changedRoom"}}>
-        {{#link-to "messages.index" activeClass="selected"}}{{room.name}}{{/link-to}}
+        {{#link-to "room" activeClass="selected"}}{{room.name}}{{/link-to}}
       </span>
     </li>
     {{/each}}
