@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('ember');
     this.route('test');
   });
+  this.route('rooms');
 });
 
 export default Router;

@@ -1,0 +1,18 @@
+<nav id="chat-rooms">
+  <ul>
+    <li>
+      <span {{action "changedRoom"}}>
+        {{#link-to "messages.index" activeClass="selected"}}ALL{{/link-to}}
+      </span>
+    </li>
+    {{#each model as |room|}}
+    <li>
+      <span {{action "changedRoom"}}>
+        {{#link-to "messages.index" activeClass="selected"}}{{room.name}}{{/link-to}}
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+</nav>
+{{author-input action="updateAuthor" class="terminal-input"}}
+{{outlet}}
