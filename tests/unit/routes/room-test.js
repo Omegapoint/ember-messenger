@@ -5,7 +5,7 @@ moduleFor('route:room', 'Unit | Route | room', {
   // needs: ['controller:foo']
 });
 
-test('it exists', function(assert) {
+test('it has a model', function(assert) {
   let route = this.subject();
   assert.ok(route);
 });
