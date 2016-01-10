@@ -5,21 +5,36 @@ moduleForComponent('chat-history', 'Integration | Component | chat history', {
   integration: true
 });
 
-test('it renders', function(assert) {
-  
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });" + EOL + EOL +
+let room = { id: "1", name: "room" };
+let time = new Date();
+let messages = [{
+  message: "hej",
+  timestamp: time,
+  speaker: "user1",
+  room: room,
+},
+{
+  message: "hoj",
+  timestamp: time,
+  speaker: "user3",
+  room: room,
+},
+{
+  message: "häj",
+  timestamp: time,
+  speaker: "user3",
+  room: room,
+}
+];
 
-  this.render(hbs`{{chat-history}}`);
+test('it renders all messages in history', function(assert) {
 
-  assert.equal(this.$().text().trim(), '');
+  this.set('history', messages);
+  this.render(hbs`{{chat-history history=history}}`);
 
-  // Template block usage:" + EOL +
-  this.render(hbs`
-    {{#chat-history}}
-      template block text
-    {{/chat-history}}
-  `);
+  let renderedText = this.$().text();
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.ok(renderedText.indexOf(messages[0].message) >= 0);
+  assert.ok(renderedText.indexOf(messages[1].message) >= 0);
+  assert.ok(renderedText.indexOf(messages[2].message) >= 0);
 });
