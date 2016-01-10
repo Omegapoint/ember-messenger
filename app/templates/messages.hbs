@@ -19,8 +19,6 @@
 </nav>
 {{author-input action="updateAuthor" class="terminal-input"}}
 <section class="shell-body">
-  {{#chat-history messages=model}}
-      {{outlet}}
-  {{/chat-history}}
+{{outlet}}
 </section>
 {{message-input action="createMessage" class="terminal-input"}}

@@ -1,3 +1,5 @@
-<section id="main">
-    {{yield}}
-</section>
+<div id="chat-history">
+    {{#each history as |message|}}
+        {{chat-message message=message}}
+    {{/each}}
+</div>
