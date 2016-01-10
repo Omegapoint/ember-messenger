@@ -15,7 +15,7 @@ test('it renders', function(assert) {
     message: "hej",
     timestamp: time,
     speaker: "user",
-    room: "room",
+    room: { id: "1", name: "room" },
   };
   this.set('message', message);
 
