@@ -10,8 +10,8 @@ Router.map(function() {
     this.route('ember');
     this.route('test');
   });
-  this.resource('rooms', function () {
-    this.resource('room', { path: '/:room_id' });
+  this.route('rooms', function () {
+    this.route('room', { path: '/:room_id' });
   });
 });
 
