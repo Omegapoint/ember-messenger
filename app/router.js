@@ -6,11 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('messages', { path: '/'}, function() {
-    this.route('ember');
-    this.route('test');
-  });
-  this.route('rooms', function () {
+  this.route('rooms', { path: '/'}, function () {
     this.route('room', { path: '/:room_id' });
   });
 });
