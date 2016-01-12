@@ -32,7 +32,7 @@ You will need the following things properly installed on your computer.
 * Change in ember-messenger/bower.json:
 ```json
 ...
-"ember": "2.0",
+"ember": "2.2.0",
 "ember-data": "2.0",
 ...
 ```
