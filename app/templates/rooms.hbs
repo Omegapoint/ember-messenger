@@ -1,4 +1,4 @@
-<nav id="chat-rooms">
+<nav id='chat-rooms'>
   <ul>
     <li>
       <span>
@@ -12,9 +12,14 @@
       </span>
     </li>
     {{/each}}
+    <li id='tab-create-room'>
+      <span>
+        <button id='btn-create-room' {{action 'createRoom'}}><strong>+</strong></button>
+      </span>
+    </li>
   </ul>
 </nav>
 {{author-input action="updateAuthor" class="terminal-input"}}
-<section class="shell-body">
+<section class='shell-body'>
 {{outlet}}
 </section>

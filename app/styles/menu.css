@@ -28,3 +28,16 @@ nav ul li a.selected {
   background: #141414;
   color: #45D40C;
 }
+#tab-create-room{
+  background: #393939;
+  border: none;
+  width: 2em;
+}
+#btn-create-room{
+  background: #393939;
+  color: #45D40C;
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  border: none;
+}

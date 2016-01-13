@@ -6,6 +6,9 @@ export default Ember.Controller.extend({
   actions: {
     updateAuthor(newUserName) {
       this.set('userName', newUserName);
+    },
+    createRoom(){
+      console.log("create room btn pressed..");
     }
   }
 });
