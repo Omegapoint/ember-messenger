@@ -14,7 +14,9 @@ module.exports = function(app) {
   });
 
   roomsRouter.post('/', function(req, res) {
-    res.status(201).end();
+    var room = req.body.room;
+    rooms.push(room);
+    res.status(201).send({'rooms': room});
   });
 
   roomsRouter.get('/:id', function(req, res) {
