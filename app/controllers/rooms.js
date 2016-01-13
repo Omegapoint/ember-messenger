@@ -1,14 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  userName: "anonymous",
+  userName: 'anonymous',
 
   actions: {
     updateAuthor(newUserName) {
       this.set('userName', newUserName);
     },
     createRoom(){
-      console.log("create room btn pressed..");
+      let room = prompt('Please enter room name', '');
+      if (room != null || room == '') {
+          console.log('Add new room '+room);
+      }
     }
   }
 });
