@@ -46,8 +46,9 @@ name: frondend-test
 .op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
 ---
 name: ember-concept
-# Ember - concept and approach .red[__-Pia__]
+# Ember.js
 
+.mainpic[![Ember.js concepts](images/ember.jpg)]
 .op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
 ---
 
