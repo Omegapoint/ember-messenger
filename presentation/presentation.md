@@ -21,6 +21,17 @@ name: agenda
 
 name: types-of-test
 # Types of tests .red[__-Tora__]
+### Acceptance
+- User interaction and application flow
+- E.g. complete user stories
+
+### Unit
+- Testing isolated chunks of data (_units_)
+- E.g. application logic and algorithms
+
+### Integration
+- Verify interactions between application parts
+- E.g. data transfers and actions
 
 .op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
 ---
