@@ -104,6 +104,7 @@ name: ember-test
 ---
 
 name: mob
-# MOB, what is it at how do you do? .red[__-Pia__]
+# Mob Programming
 
+.mainpic[![mob programming](images/mob_programming.jpg)]
 .op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
