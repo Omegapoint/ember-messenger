@@ -1,7 +1,7 @@
 class: center, middle
 count: false
 name: start
-# Frontendtestning med Ember.js - mobbprogrammering
+# Frontend testing with Ember.js
 ![omegapoint logo](images/OPblack.jpg)
 ![duechess sweden](http://photos1.meetupstatic.com/photos/event/8/0/e/0/global_106772992.jpeg)
 ---
@@ -10,7 +10,7 @@ name: agenda
 # Agenda
 
 1. About us!
-2. Why _Frontendtestning med Ember.js_?
+2. Why frontend testing and Ember.js?
 3. Test
 4. Ember
 5. Test + Ember
