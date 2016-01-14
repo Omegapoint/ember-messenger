@@ -37,7 +37,11 @@ name: types-of-test
 ---
 
 name: frondend-test
-# Frondend-test .red[__-Tora__]
+# Frondend development matures .red[__-Tora__]
+- Static web pages --> interactive web pages
+- Popular with JavaScript frameworks
+- Need for more frontend tests
+- QUnit, Jasmine, Mocha, Unit.js
 
 .op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
 ---
