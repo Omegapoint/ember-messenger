@@ -5,8 +5,17 @@ moduleFor('controller:rooms', 'Unit | Controller | rooms', {
   // needs: ['controller:foo']
 });
 
-// Replace this with your real tests.
-test('it exists', function(assert) {
+test('author is initialized to "anonymous"', function(assert) {
   let controller = this.subject();
-  assert.ok(controller);
+
+  assert.equal(controller.get('userName'), "anonymous");
+});
+
+test('updateAuthor updates author name', function(assert) {
+  let controller = this.subject();
+  let newUserName = "Pia";
+
+  controller.send('updateAuthor', newUserName);
+
+  assert.equal(controller.get('userName'), newUserName, "Username is updated");
 });
