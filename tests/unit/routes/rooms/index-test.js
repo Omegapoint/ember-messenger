@@ -5,19 +5,20 @@ moduleFor('route:rooms/index', 'Unit | Route | rooms/index', {
   // needs: ['controller:foo']
 });
 
-test('its model contains all message objects in the store', function(assert) {
-  let fake = { fake: "fake"};
-  let storedMessages = [ fake, fake ];
-  let store = {
-    findAll(model) {
-      if (model === "message") {
-          return [ fake, fake ];
+function makeStore(model) {
+  return {
+    findAll(type) {
+      if (type === 'message') {
+        return model;
       }
       return [];
     }
   };
-  let route = this.subject({ store: store });
-  route.store = store;
+}
+
+test('its model contains all message objects in the store', function(assert) {
+  let storedMessages = [ "fake", "fake" ];
+  let route = this.subject({ store: makeStore(storedMessages)});
   assert.equal(route.model().length, 2, "There are two model elements.");
   assert.deepEqual(route.model(), storedMessages, "The model elements are the ones returned by the store.");
 });
