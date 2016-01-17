@@ -48,3 +48,22 @@ test('createMessage creates the given message', function(assert) {
     assert.equal(createdMessage.get('message'), message, "Creates the given message.");
   });
 });
+
+test('createMessage creates a message in the current room', function(assert) {
+  let model = Ember.Object.create({ id: "room_id", messages: [], save() {} });
+  // If we don't mock the store here, we'll have to create a larger test model
+  // (because room is a reference)
+  // so let's mock the store.
+  let store = { createRecord(model, obj) {
+    return Ember.Object.create(obj);
+  }};
+  let controller = this.subject({ model: model, store: store});
+
+  Ember.run(function() {
+    controller.send('createMessage', "I'm a new message");
+    assert.equal(model.messages.length, 1, "One message should be created");
+    let createdMessage = model.messages[0];
+
+    assert.equal(createdMessage.get('room'), model.get("id"), "Creates a message in room " + model.get("id") + ".");
+  });
+});
