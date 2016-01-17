@@ -11,10 +11,11 @@ export default Ember.Controller.extend({
       let room = prompt('Please enter room name\n(max 15 character, no spaces)', '');
       if (room !== null || room === '') {
           room = room.replace(/\s/g, '').substring(0,15);
-          this.store.createRecord('room', {
+          let record = this.store.createRecord('room', {
               id: room,
               name: room
           });
+          record.save();
       }
     }
   }
