@@ -5,12 +5,10 @@ moduleForComponent('message-input', 'Integration | Component | message input', {
   integration: true
 });
 
-test('it renders', function(assert) {
-
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });" + EOL + EOL +
+test('it renders a prompt and an input element', function(assert) {
 
   this.render(hbs`{{message-input}}`);
 
-  assert.equal(this.$().text().trim(), '$');
+  assert.equal(this.$().text().trim(), '$', "It renders a prompt.");
+  assert.equal(this.$("input").length, 1, "It renders one input element.");
 });
