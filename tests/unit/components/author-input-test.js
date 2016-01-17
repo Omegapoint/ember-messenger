@@ -4,7 +4,7 @@ moduleFor('component:author-input', 'Unit | Component | author-input', {
   // Specify the other units that are required for this test.
 });
 
-test("it delets whitespace in author name.", function(assert) {
+test("it deletes whitespace in author name.", function(assert) {
   let component = this.subject();
 
   component.actions.sendAction = function(action, arg) {
@@ -12,4 +12,14 @@ test("it delets whitespace in author name.", function(assert) {
   };
 
   component.actions.updateAuthor("Junior Hacker");
+});
+
+test("long author names are truncated.", function(assert) {
+  let component = this.subject();
+
+  component.actions.sendAction = function(action, arg) {
+    assert.equal(arg, "AReallyLongUser", "Author name is truncated.");
+  };
+
+  component.actions.updateAuthor("AReallyLongUserName");
 });
