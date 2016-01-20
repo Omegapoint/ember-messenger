@@ -20,6 +20,6 @@ test('changing a handle', function(assert) {
 
   // expect last message in chat history be written by the new username;
   andThen(function() {
-    assert.equal(find('#chat-history li:last .msg-who').text().trim(), "MartinLutherKin@ember$");
+    assert.equal(find('#chat-history li:last .msg-who').text().trim(), "MartinLutherKin@ember$", "Author of last message is handle without spaces");
   });
 });

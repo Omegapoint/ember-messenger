@@ -1,5 +1,5 @@
-# Exercise: Write an acceptance test that checks that new chat messages can be created.
+# Exercise: Make the failing acceptance test go green.
 
-The test should make sure that each message is added to the chat history of the current room.
+Implement functionality to edit author name. The failing acceptance test is your 'spec'.
 
-Hint: 'ember generate acceptance-test <name-of-test>'
+You're encouraged to write unit tests for any controllers or components you might want to change.
