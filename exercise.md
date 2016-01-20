@@ -1,5 +1,5 @@
-# Exercise: Make it possible to add a new room.
+# Exercise: Write an acceptance test that checks that new chat messages can be created.
 
-How it's done is up to you! We do however recommend writing an acceptance test for this feature.
+The test should make sure that each message is added to the chat history of the current room.
 
-Hint: Use the little '+' as a starting point.
+Hint: 'ember generate acceptance-test <name-of-test>'
