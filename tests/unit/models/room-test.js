@@ -1,3 +1,4 @@
+import Ember from 'ember';
 import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('room', 'Unit | Model | room', {
@@ -5,6 +6,18 @@ moduleForModel('room', 'Unit | Model | room', {
   needs: [ 'model:message' ]
 });
 
-test('this makes this file pass jshint ', function (assert) {
-  assert.ok("and this is your starting point for the test.");
+test('it has a name attribute', function(assert) {
+  let roomModel = this.store().modelFor('room');
+  let attributes = Ember.get(roomModel, 'attributes');
+  let name = attributes.get('name');
+
+  assert.equal(name.type, 'string');
+});
+
+test('it has many messages', function(assert) {
+  let roomModel = this.store().modelFor('room');
+  let relations = Ember.get(roomModel, 'relationshipsByName');
+  let messagesRelation = relations.get('messages');
+
+  assert.equal(messagesRelation.kind, 'hasMany');
 });
