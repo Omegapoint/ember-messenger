@@ -1,5 +1,5 @@
-# Exercise: Make the failing acceptance test go green.
+# Exercise: Write a unit test for controllers/room that checks the timestamp a new message
 
-Implement functionality to edit author name. The failing acceptance test is your 'spec'.
+Hint 1: Have a look at the existing tests in tests/controllers/room-test.js
 
-You're encouraged to write unit tests for any controllers or components you might want to change.
+Hint 2: You probably don't want to check the exact value of the timestamp, but some other properties might be worth testing.
