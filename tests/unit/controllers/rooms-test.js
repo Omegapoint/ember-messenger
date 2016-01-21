@@ -10,3 +10,12 @@ test('author is initialized to "anonymous"', function(assert) {
 
   assert.equal(controller.get('userName'), "anonymous");
 });
+
+test('updateAuthor updates author name', function(assert) {
+  let controller = this.subject();
+  let newUserName = "Pia";
+
+  controller.send('updateAuthor', newUserName);
+
+  assert.equal(controller.get('userName'), newUserName, "Username is updated");
+});
