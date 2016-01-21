@@ -1,5 +1,5 @@
-# Exercise: Write an acceptance test that checks that new chat messages can be created.
+# Exercise: Write a unit test for controllers/room that checks the timestamp a new message
 
-The test should make sure that each message is added to the chat history of the current room.
+Hint 1: Have a look at the existing tests in tests/controllers/room-test.js
 
-Hint: 'ember generate acceptance-test <name-of-test>'
+Hint 2: You probably don't want to check the exact value of the timestamp, but some other properties might be worth testing.
