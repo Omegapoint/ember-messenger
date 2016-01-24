@@ -8,5 +8,5 @@ moduleFor('controller:rooms', 'Unit | Controller | rooms', {
 test('author is initialized to "anonymous"', function(assert) {
   let controller = this.subject();
 
-  assert.equal(controller.get('userName'), "anonymous");
+  assert.equal(controller.get('author'), "anonymous");
 });
