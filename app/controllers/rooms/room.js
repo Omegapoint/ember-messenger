@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
       let record = this.store.createRecord('message', {
           message: newMessage,
           timestamp: new Date(),
-          speaker: this.get('rooms').get('userName')
+          author: this.get('rooms').get('author')
       });
       this.model.get('messages').addObject(record);
       record.save();
