@@ -10,19 +10,19 @@ let time = new Date();
 let messages = [{
   message: "hej",
   timestamp: time,
-  speaker: "user1",
+  author: "user1",
   room: room,
 },
 {
   message: "hoj",
   timestamp: time,
-  speaker: "user3",
+  author: "user3",
   room: room,
 },
 {
   message: "häj",
   timestamp: time,
-  speaker: "user3",
+  author: "user3",
   room: room,
 }
 ];

@@ -14,7 +14,7 @@ test('it has message, author, and time fields', function(assert) {
   assert.ok(message, "Model has a message attribute.");
   assert.equal(message.type, 'string', "Message attribute has string type.");
 
-  let author = attributes.get('speaker');
+  let author = attributes.get('author');
   assert.ok(author, "Model has an author attribute.");
   assert.equal(author.type, 'string', "Author attribute has string type.");
 
