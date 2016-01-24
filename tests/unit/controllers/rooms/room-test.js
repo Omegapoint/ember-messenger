@@ -33,7 +33,7 @@ test('createMessage creates a message with rooms author', function(assert) {
     let roomsController = controller.get('rooms');
     let author = "Batman";
 
-    roomsController.set('userName', author);
+    roomsController.set('author', author);
     controller.send('createMessage', "Hi! I'm a new message");
     assert.equal(model.messages.length, 1, "One message should be created");
 
