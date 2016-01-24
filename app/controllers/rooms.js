@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  userName: 'anonymous',
+  author: 'anonymous',
 
   actions: {
-    updateAuthor(newUserName) {
-      this.set('userName', newUserName);
+    updateAuthor(author) {
+      this.set('author', author);
     },
     createRoom(){
       let room = prompt('Please enter room name\n(max 15 character, no spaces)', '');

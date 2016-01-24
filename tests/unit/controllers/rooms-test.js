@@ -8,14 +8,14 @@ moduleFor('controller:rooms', 'Unit | Controller | rooms', {
 test('author is initialized to "anonymous"', function(assert) {
   let controller = this.subject();
 
-  assert.equal(controller.get('userName'), "anonymous");
+  assert.equal(controller.get('author'), "anonymous");
 });
 
 test('updateAuthor updates author name', function(assert) {
   let controller = this.subject();
-  let newUserName = "Pia";
+  let newAuthor = "Pia";
 
-  controller.send('updateAuthor', newUserName);
+  controller.send('updateAuthor', newAuthor);
 
-  assert.equal(controller.get('userName'), newUserName, "Username is updated");
+  assert.equal(controller.get('author'), newAuthor, "Username is updated");
 });
