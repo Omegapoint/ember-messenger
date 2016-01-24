@@ -38,7 +38,7 @@ test('createMessage creates a message with rooms author', function(assert) {
     assert.equal(model.messages.length, 1, "One message should be created");
 
     let createdMessage = model.messages[0];
-    assert.equal(createdMessage.get('speaker'), author, "Gets author from parent controller.");
+    assert.equal(createdMessage.get('author'), author, "Gets author from parent controller.");
   });
 });
 
