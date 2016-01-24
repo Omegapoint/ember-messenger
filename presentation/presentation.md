@@ -11,16 +11,16 @@ name: agenda
 
 1. About us!
 2. Why frontend testing and Ember.js?
-3. Test
-4. Ember
-5. Test + Ember
-6. Mob
+3. Type of tests in Ember.js
+4. Ember.js
+5. Setup basic Ember project with tests
+6. Mob programming
 
 .op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
 ---
 
 name: types-of-test
-# Types of tests .red[__-Tora__]
+# Types of tests in Ember.js
 ### Acceptance
 - User interaction and application flow
 - E.g. complete user stories
@@ -36,15 +36,6 @@ name: types-of-test
 .op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
 ---
 
-name: frondend-test
-# Frondend development matures .red[__-Tora__]
-- Static web pages --> interactive web pages
-- Popular with JavaScript frameworks
-- Need for more frontend tests
-- QUnit, Jasmine, Mocha, Unit.js
-
-.op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
----
 name: ember-concept
 # Ember.js
 
