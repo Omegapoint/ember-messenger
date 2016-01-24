@@ -3,7 +3,7 @@ import moduleForAcceptance from 'ember-messenger/tests/helpers/module-for-accept
 
 moduleForAcceptance('Acceptance | edit handle');
 
-test('changing a handle', function(assert) {
+test('changing an author name', function(assert) {
   let authorInput = 'input#author';
   let msgInput = 'input#new-message';
 
