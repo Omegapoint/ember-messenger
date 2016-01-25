@@ -3,7 +3,7 @@ count: false
 name: start
 # Frontend testing with Ember.js
 ![omegapoint logo](images/OPblack.jpg)
-![duechess sweden](http://photos1.meetupstatic.com/photos/event/8/0/e/0/global_106772992.jpeg)
+![duechess sweden](images/duechess_swe.jpeg)
 ---
 
 name: agenda
@@ -70,7 +70,7 @@ name: ember-setup
 "ember-data": "2.0",
 "jquery": "1.11.3",
 ```
-- `bower install`
+- `npm install && bower install`
 - `ember server`, `ember serve` or `ember s`
 - Visit the app at [localhost:4200](http://localhost:4200)
 - Generate blueprints: `ember generate...`
@@ -79,18 +79,6 @@ ember g route _route-name_
 ember g model _model-name_
 ember g component _component-name_
 ```
-???
-Har tänkt att göra en sampel app, lägga till en route och en componen.
-Hade varit kul att hinna med model och mirage med.
-
-.op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
----
-
-name: ember-test
-# Test in Ember .red[__-Bestämdes aldrig..__]
-- Acceptance test: `ember g acceptance-test login`
-- Integration test
-- Unit test
 
 .op-logo[![omegapoint logo](images/OPblack-sm.jpg)]
 ---
