@@ -1,5 +1,7 @@
 # Ember-messenger
 
+This is an example project created to demonstrate some features of Ember.js and its testing capabilities on a Duchess Sweden meetup.
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
