@@ -28,15 +28,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone https://github.com/Omegapoint/ember-messenger.git` this repository
 * `cd ember-messenger`
-* `npm install`
-* Change in ember-messenger/bower.json:
-```json
-...
-"ember": "2.2.0",
-"ember-data": "2.0",
-...
-```
-* `bower install` (choose at least 2.0 if bower asks)
+* `npm install && bower install`
 
 ## Running / Development
 
